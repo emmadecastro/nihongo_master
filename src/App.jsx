@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { JAPANESE_DATA } from './japaneseData';
 import { BookOpen, Trophy, ArrowLeft, RotateCw, CheckCircle, Home, Brain, Play } from 'lucide-react';
 
 // --- DONNÉES D'EXEMPLE ---
