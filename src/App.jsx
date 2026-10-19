@@ -1,36 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { JAPANESE_DATA } from './japaneseData';
 import { BookOpen, Trophy, ArrowLeft, RotateCw, CheckCircle, Home, Brain, Play } from 'lucide-react';
-
-// --- DONNÉES D'EXEMPLE ---
-const JAPANESE_DATA = {
-  hiragana: [
-    { id: 'h1', jp: 'あ', fr: 'a' }, { id: 'h2', jp: 'い', fr: 'i' },
-    { id: 'h3', jp: 'う', fr: 'u' }, { id: 'h4', jp: 'え', fr: 'e' }, { id: 'h5', jp: 'お', fr: 'o' }
-  ],
-  katakana: [
-    { id: 'k1', jp: 'ア', fr: 'a' }, { id: 'k2', jp: 'イ', fr: 'i' },
-    { id: 'k3', jp: 'ウ', fr: 'u' }, { id: 'k4', jp: 'エ', fr: 'e' }, { id: 'k5', jp: 'オ', fr: 'o' }
-  ],
-  n5: [
-    { id: 'n5-1', jp: '一', fr: 'Un (ichi)' }, { id: 'n5-2', jp: '二', fr: 'Deux (ni)' },
-    { id: 'n5-3', jp: '三', fr: 'Trois (san)' }, { id: 'n5-4', jp: '人', fr: 'Personne (hito)' },
-    { id: 'n5-5', jp: '水', fr: 'Eau (mizu)' }
-  ],
-  n4: [
-    { id: 'n4-1', jp: '心', fr: 'Cœur (kokoro)' }, { id: 'n4-2', jp: '思', fr: 'Penser (omou)' },
-    { id: 'n4-3', jp: '急', fr: 'Se dépêcher (isogu)' }
-  ],
-  n3: [
-    { id: 'n3-1', jp: '関係', fr: 'Relation (kankei)' }, { id: 'n3-2', jp: '準備', fr: 'Préparation (junbi)' }
-  ],
-  n2: [
-    { id: 'n2-1', jp: '環境', fr: 'Environnement (kankyou)' }, { id: 'n2-2', jp: '評価', fr: 'Évaluation (hyouka)' }
-  ],
-  n1: [
-    { id: 'n1-1', jp: '曖昧', fr: 'Ambigu (aimai)' }, { id: 'n1-2', jp: '葛藤', fr: 'Conflit (kattou)' }
-  ]
-};
+import { JAPANESE_DATA } from './japaneseData';
 
 const CATEGORIES = [
   { id: 'hiragana', title: 'Hiragana', color: 'bg-pink-500', hover: 'hover:bg-pink-600' },
@@ -410,3 +380,4 @@ function Quiz({ category, data, onBack, onComplete }) {
     </div>
   );
 }
+
